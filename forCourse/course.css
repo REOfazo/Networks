@@ -1,0 +1,214 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+.courseMenu {
+    width: 100%;
+    height: 60px;
+    background: darkslategray;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0px;
+    right: 0px;
+    z-index: 10;
+  }
+  .courseMenu ul {
+    list-style: none;
+  }
+  .courseMenu ul li:nth-child(1) {
+    margin-left: 78px;
+  }
+  .courseMenu ul li {
+    display: inline-block;
+    font-weight: bold;
+    color: white;
+    margin: 18px 30px;
+  }
+  .courseMenu ul li:hover {
+    border-radius: 6px;
+    border-bottom: 3px solid white;
+    transition: 0.3s;
+  }
+.cardOne {
+    width: 100%;
+    height: auto;
+    background: url(/images/bg_image.jpg) no-repeat;
+    background-size: cover;
+}
+.cardOne .card {
+    display: inline-block;
+    border-radius: 30px 0px;
+    margin: 6px;
+    width: 300px;
+    height: 400px;
+}
+.card img {
+    width: 100%;
+    height: auto;
+    border-radius: 30px 0px 0px;
+}
+.card h3 {
+    font-weight: bold;
+    color: goldenrod;
+}
+.card button {
+    width: 160px;
+    height: 40px;
+    font-weight: bolder;
+    border-radius: 12px;
+    background-color: lightgreen;
+    border: none;
+}
+.card button:hover {
+    background-color: green;
+    color: white;
+    transition: 0.6s;
+}
+
+
+
+
+
+
+
+
+
+#shadowBox {
+    display: none;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    z-index: 900;
+    width: 100%;
+    height: 100%;
+    background: rgba(100, 100, 100, 0.7);
+}
+#shadowBox > img {
+    position: absolute;
+    top: 3px;
+    right: 6px;
+    width: 40px;
+    height: 30px;
+}
+#messageDialog {
+    margin-top: 200px;
+    max-width: 400px;
+    height: 400px;
+    text-align: center;
+    background: whitesmoke;
+    box-shadow: 0px 0px 10px white, 0px 0px 20px black, 0px 0px 30px white;
+    border-radius: 20px;
+}
+#innerImg {
+    width: 100%;
+    height: auto;
+    border-radius: 20px 20px 0px 0px;
+}
+#messageDialog button {
+    width: 120px;
+    height: 30px;
+    margin: 4px;
+    border-radius: 8px;
+    background: gray;
+    color: white;
+    font-weight: bold;
+}
+#messageDialog button:hover {
+    animation: animButton 0.4s;
+    animation-fill-mode: both;
+}
+#messageDialog a {
+    text-decoration: none;
+}
+#phoneIcon {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -40px;
+    right: -380px;
+}
+#phoneIcon img {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+}
+#phoneBorder {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, 0);
+    position: relative;
+    top: -90px;
+    right: -380px;
+    border: 3px solid none;
+    animation: animPhone 1s infinite;
+}
+#innerH3 {
+    font-weight: bold;
+    color: goldenrod;
+}
+#phoneNumber {
+    font-weight: bold;
+    color: green;
+}
+@keyframes animPhone {
+    from {
+
+    }
+    to {
+        top: -100px;
+        right: -370px;
+        width: 70px;
+        height: 70px;
+        border: 3px solid green;
+    }
+}
+
+
+
+
+
+
+footer {
+    width: 100%;
+    height: 490px;
+    background-color: black;
+    color: white;
+  }
+  footer h1, footer p {
+    padding: 18px;
+    text-align: center;
+  }
+  footer h6 {
+    position: relative;
+    bottom: -300px;
+    text-align: center;
+  }
+  .forImage {
+    margin-left: 40%;
+  }
+  .forImage img {
+    width: 60px;
+    height: auto;
+    margin: 10px;
+  }
+  .forImage img:hover {
+    background-color: white;
+    padding: 12px;
+    border-radius: 4px;
+  }
+  
+  
+  
+  @media (max-width: 575px) {
+    footer h6 {
+        bottom: -280px;
+    }
+    .forImage {
+        margin-left: 25%;
+    }
+  }
